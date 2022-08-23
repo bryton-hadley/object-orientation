@@ -134,6 +134,20 @@ function ingredients(object) {
 let ingredients2 = ingredients({ crab: 'sweet potato', fat: 'pork-belly', protein: 'whey' })
 console.log(ingredients2)
 
+// easier solution 
+
+// const ingredients = (obj) => {
+//   let {carb, fat , protein}
+
+//   let array =[]
+
+//   array.push(carb, fat, protein)
+
+//   return array 
+// }
+
+// let ingredients2 = ingredients({ crab: 'sweet potato', fat: 'pork-belly', protein: 'whey' })
+// console.log(ingredients2)
 
 
 //////////////////////////// PROBLEM 10 ////////////////////////////
@@ -215,6 +229,7 @@ class Wizard {
 
 let wizardOne = new Wizard('Harry', 13, 'I Expecto Patron tonight');
 
+console.log(wizardOne)
 
 //////////////////////////// PROBLEM 14 ////////////////////////////
 /*
@@ -272,9 +287,9 @@ class Phone {
 */
 
 //Code Here
-let razor = new Phone('Motorola', 'Razor', 64, 'Black', '$500');
-let iphone = new Phone('Apple', 'Iphone 10', 128, 'Blue', '$1,150')
-let samsung = new Phone('Samsung', 'Galaxy', 120, 'Gold', '$900')
+let razor = new Phone('Motorola', 'Razor', 64, 'Black', 500);
+let iphone = new Phone('Apple', 'Iphone 10', 128, 'Blue', 1,150)
+let samsung = new Phone('Samsung', 'Galaxy', 120, 'Gold', 900)
 /* 
   Call the changePrice function on one of your phones, 
   don't forget to pass in a new price 
