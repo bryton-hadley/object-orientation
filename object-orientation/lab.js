@@ -241,7 +241,7 @@ let wizardOne = new Wizard('Harry', 13, 'I Expecto Patron tonight');
 
 //Code Here
 class Phone {
-  constructor( brand, model, storage, color, price, sold){
+  constructor( brand, model, storage, color, price, ){
     this.brand = brand;
     this.model = model;
     this.storage = storage;
@@ -272,9 +272,9 @@ class Phone {
 */
 
 //Code Here
-let razor = new Phone('Motorola', 'Razor', '64GB', 'Black', '$500');
-let iphone = new Phone('Apple', 'Iphone 10', '128GB', 'Blue', '$1,150')
-let samsung = new Phone('Samsung', 'Galaxy', '120Gb', 'Gold', '$900')
+let razor = new Phone('Motorola', 'Razor', 64, 'Black', '$500');
+let iphone = new Phone('Apple', 'Iphone 10', 128, 'Blue', '$1,150')
+let samsung = new Phone('Samsung', 'Galaxy', 120, 'Gold', '$900')
 /* 
   Call the changePrice function on one of your phones, 
   don't forget to pass in a new price 
@@ -282,7 +282,8 @@ let samsung = new Phone('Samsung', 'Galaxy', '120Gb', 'Gold', '$900')
   Then console.log that object to see the price change
 */ 
 
-//Code Here 
+//Code Here
+console.log(samsung.changePrice(1100))
 
 
 /*
@@ -292,7 +293,7 @@ let samsung = new Phone('Samsung', 'Galaxy', '120Gb', 'Gold', '$900')
 */
 
 //Code Here 
-
+iphone.sell()
 
 //////////////////////////// PROBLEM 15 ////////////////////////////
 
