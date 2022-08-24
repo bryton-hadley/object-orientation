@@ -40,7 +40,7 @@ console.log(dog.name)
 /* Print out the color of the dog you created in problem 2 using bracket-notation. */
 
 //Code here
-console.log(dog['color'])
+console.log(dog.color)
 
 
 
@@ -64,7 +64,7 @@ let favoriteThings = {
 */
 
 //Code here
-favoriteThings['car'] = 'Nissan Skyline GTR'
+favoriteThings.car = 'Nissan Skyline GTR'
 favoriteThings.show = 'White Collar'
 /*
   Now use bracket or dot notation to change the value of the food key in your favoriteThings object to be 'Chicken Nuggets'
@@ -75,6 +75,7 @@ favoriteThings.show = 'White Collar'
 favoriteThings.food = 'Chickin Nuggets'
 favoriteThings.book = 'Harry Potter'
 
+console.log(favoriteThings)
 
 //////////////////////////// PROBLEM 6 ////////////////////////////
 
@@ -85,6 +86,7 @@ var carDetails = {
   model: 'tacoma',
   year: 1994
 }
+
 // Do not edit the code above.
 
 /*
@@ -92,10 +94,10 @@ var carDetails = {
 */
 
 //Code Here
-let {color} = 'blue'
-let{make} = 'ford'
-let{model} = 'f-150'
-let{year} = 2021
+
+
+//let {color, make, model, year} = carDetails2
+
 
 
 //////////////////////////// PROBLEM 7 ////////////////////////////
@@ -108,7 +110,7 @@ let{year} = 2021
 
 function greeting( obj ) {
   //Code Here
-  let {}
+let{ title, firstName, lastName} = obj
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
@@ -127,8 +129,12 @@ function greeting( obj ) {
 */
 
 //Code Here
+function totalPopulation(state){
+  let{utah, califonia, texas, arizona} = state
 
-
+  return utah + califonia + texas + arizona
+}
+totalPopulation()
 
 //////////////////////////// PROBLEM 9 ////////////////////////////
 
