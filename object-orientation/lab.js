@@ -95,8 +95,9 @@ var carDetails = {
 
 //Code Here
 
-
-//let {color, make, model, year} = carDetails2
+let{color} = 'Blue'
+let{make} = "Ford"
+let{model} =
 
 
 
@@ -108,13 +109,15 @@ var carDetails = {
   The property names are firstName, lastName, and title.
 */
 
-function greeting( obj ) {
+function greeting(obj) {
   //Code Here
 let{ title, firstName, lastName} = obj
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
 }
+
+
 
 
 
@@ -131,11 +134,13 @@ let{ title, firstName, lastName} = obj
 //Code Here
 function totalPopulation(state){
   let{utah, califonia, texas, arizona} = state
-
+  
+if(state)
   return utah + califonia + texas + arizona
 }
-totalPopulation()
+num = totalPopulation({utah, califonia, texas, arizone})
 
+console.log(num)
 //////////////////////////// PROBLEM 9 ////////////////////////////
 
 /*
