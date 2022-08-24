@@ -9,7 +9,7 @@ let me = {
   firstName: 'Bryton',
   age:'24'
 }
-
+console.log(me)
 
 //////////////////////////// PROBLEM 2 ////////////////////////////
 
@@ -19,6 +19,12 @@ let me = {
 //and goodBoy/goodGirl (a boolean).
 
 //Code here
+let dog = {
+  name: 'Jack',
+  color: 'Black',
+  age: 5,
+  goodBoy: true
+}
 
 
 
@@ -26,6 +32,7 @@ let me = {
 /* Print out the name of the dog you created in problem 2 using dot-notation. */
 
 //Code here
+console.log(dog.name)
 
 
 
@@ -33,6 +40,7 @@ let me = {
 /* Print out the color of the dog you created in problem 2 using bracket-notation. */
 
 //Code here
+console.log(dog['color'])
 
 
 
@@ -43,21 +51,29 @@ let me = {
 */
 
 //Code here
-
+let favoriteThings = {
+  band: 'Van Halen',
+  food: 'Ramen',
+  person: 'Mars',
+  book: 'The Lightening Theif',
+  movie: 'Treasure Planet'
+}
 
 /*
   After you've made your object, use bracket or dot notation to add another key named 'car' with the value being your favorite car and then another key named 'show' with the value being your favorite show.
 */
 
 //Code here
-
-
+favoriteThings['car'] = 'Nissan Skyline GTR'
+favoriteThings.show = 'White Collar'
 /*
   Now use bracket or dot notation to change the value of the food key in your favoriteThings object to be 'Chicken Nuggets'
   and change the value of the book key in your favoriteThings object to be 'Harry Potter'. (If they were either of those things already, change them to something else.)
 */
 
 //Code here
+favoriteThings.food = 'Chickin Nuggets'
+favoriteThings.book = 'Harry Potter'
 
 
 //////////////////////////// PROBLEM 6 ////////////////////////////
@@ -76,7 +92,10 @@ var carDetails = {
 */
 
 //Code Here
-
+let {color} = 'blue'
+let{make} = 'ford'
+let{model} = 'f-150'
+let{year} = 2021
 
 
 //////////////////////////// PROBLEM 7 ////////////////////////////
@@ -89,7 +108,7 @@ var carDetails = {
 
 function greeting( obj ) {
   //Code Here
-  
+  let {}
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
