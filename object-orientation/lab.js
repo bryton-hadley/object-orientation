@@ -40,7 +40,7 @@ console.log(dog.name)
 /* Print out the color of the dog you created in problem 2 using bracket-notation. */
 
 //Code here
-console.log(dog.color)
+console.log(dog['color'])
 
 
 
@@ -64,8 +64,8 @@ let favoriteThings = {
 */
 
 //Code here
-favoriteThings.car = 'Nissan Skyline GTR'
-favoriteThings.show = 'White Collar'
+favoriteThings['car'] = 'Nissan Skyline GTR'
+favoriteThings['show'] = 'White Collar'
 /*
   Now use bracket or dot notation to change the value of the food key in your favoriteThings object to be 'Chicken Nuggets'
   and change the value of the book key in your favoriteThings object to be 'Harry Potter'. (If they were either of those things already, change them to something else.)
@@ -95,11 +95,10 @@ var carDetails = {
 
 //Code Here
 
-let{color} = 'Blue'
-let{make} = "Ford"
-let{model} =
 
+let {color: shade, make: manuFacture , model: design, year: era} =  carDetails
 
+console.log(carDetails)
 
 //////////////////////////// PROBLEM 7 ////////////////////////////
 
@@ -135,10 +134,11 @@ let{ title, firstName, lastName} = obj
 function totalPopulation(state){
   let{utah, califonia, texas, arizona} = state
   
-if(state)
+if(state){
   return utah + califonia + texas + arizona
 }
-num = totalPopulation({utah, califonia, texas, arizone})
+}
+ let num = Number(totalPopulation)
 
 console.log(num)
 //////////////////////////// PROBLEM 9 ////////////////////////////
@@ -407,7 +407,11 @@ console.log(helensInfo);
 */
 
 //Code Here 
-
+class vehicle {
+  constructor(capacity, color, mileage){
+    function move 
+  }
+}
 
 /*
   Create a vehicle using your new class and save it to a variable called myFirstVehicle
