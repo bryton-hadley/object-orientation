@@ -286,7 +286,7 @@ console.log(wizardOne)
 
 //Code Here
 class Phone {
-  constructor( brand, model, storage, color, price, ){
+  constructor( brand, model, storage, color, price){
     this.brand = brand;
     this.model = model;
     this.storage = storage;
@@ -409,7 +409,13 @@ console.log(helensInfo);
 //Code Here 
 class vehicle {
   constructor(capacity, color, mileage){
-    function move 
+    this.capacity = capacity;
+    this.color = color;
+    this.mileage = mileage;
+  }
+  move(miles) { 
+    this.miles = miles
+
   }
 }
 
@@ -418,6 +424,7 @@ class vehicle {
 */
 
 //Code Here
+const myFirstVehicle = new vehicle(4, 'Black', 150660)
 
 
 /* 
@@ -430,16 +437,27 @@ class vehicle {
 
 //Code Here
 
+class Motorcycle extends vehicle {
+
+constructor(capacity, color, mileage, make, isCool){
+  super(capacity, color, mileage)
+  this.make = make
+  this.isCool = isCool
+}
+
+}
+
 /*
   Create a Motorcycle using your new class and save it to a variable called myFirstMotorcycle
 */
 
 //Code Here 
+const myFirstMotorcycle = new Motorcycle(1, 'Cream White', 1000, 'Indian Scout', true) 
 
 /*
   Call the move function on myFirstMotorcycle (don't forget the parameter)
 */
-
+myFirstMotorcycle.move(1000)
 /*
   Let's make another class based off of Vehicle. 
 
@@ -457,7 +475,24 @@ class vehicle {
 */
 
 //Code Here
-
+class Boat extends vehicle {
+  constructor(capacity, color, mileage, name, type, isSeaworthy){
+    super(capacity, color, mileage)
+    this.name = name
+    this.type = type
+    this.isSeaworthy = isSeaworthy
+  }
+  checkSeaworthieness(){
+    if(this.isSeaworthy){
+      console.log(`The ${this.color} ${this.type} ${this.name} is seaworthy`)
+    } else{
+    console.log(`You need to get your ${this.type} in shape!`)
+    }
+  }
+  performMaintenance(){
+    this.isSeaworthy = true
+  }
+}
 
 /*
   Create a new boat using your class. You can choose whatever values you like for all the 
@@ -465,21 +500,24 @@ class vehicle {
 */
 
 //Code Here
+const myFirstBoat = new Boat(12, 'Black', 1500, 'Black Preal', false)
 
 /*
   Call the checkSeaworthiness method on your new boat
 */
 
 //Code Here
-
+myFirstBoat.checkSeaworthieness()
 /*
   Now run the performMaintenance method on your boat
 */
 
 //Code Here 
+myFirstBoat.performMaintenance()
 
 /*
   Check the seaworthiness once more (you should be ready for the water!)
 */
 
 //Code Here
+myFirstBoat.checkSeaworthieness()
